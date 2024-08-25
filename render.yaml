@@ -1,0 +1,35 @@
+services:
+  # A Docker web service
+  - type: web
+    name: VJ-FILTER-BOT
+    env: python
+    startCommand: python3 bot.py
+    buildCommand: pip3 install -U -r requirements.txt
+    repo: https://github.com/Nani0778/VJ-FILTER-BOT.git # optional
+    region: oregon # optional (defaults to oregon)
+    plan: free # optional (defaults to starter)
+    branch: Tech_VJ # optional (defaults to master)
+    numInstances: 1 # optional (defaults to 1)
+    healthCheckPath: /
+    envVars:
+      - key: ADMINS
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHANNELS
+        sync: false
+      - key: DATABASE_URI
+        sync: false
+      - key: PICS
+        sync: false
+      - key: LOG_CHANNEL
+        sync: false
+      - key: GRP_LNK
+        sync: false
+      - key: CHNL_LNK
+        sync: false
+        
