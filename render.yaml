@@ -24,12 +24,12 @@ services:
         sync: false
       - key: DATABASE_URI
         sync: false
-      - key: PICS
+      - key: DATABASE_NAME
         sync: false
       - key: LOG_CHANNEL
         sync: false
-      - key: GRP_LNK
+      - key: PICS
         sync: false
-      - key: CHNL_LNK
+      - key: FILE_STORE_CHANNEL
         sync: false
         
